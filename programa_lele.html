@@ -1,0 +1,77 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculeocombustivel(combustivel,kmporlitro) {
+
+        return(combustivel/kmporlitro);
+
+
+    }
+
+
+    
+    var nome = prompt("olá seja bem vindo, informe seu nome !");
+    var combustivel = prompt(nome + ", qual o preço do seu combustivel ? ");
+    var kmporlitro = prompt(nome + ", informe a media de combustivel que seu carro faz por litro.");
+    
+
+    var resultado = calculeocombustivel(combustivel,kmporlitro);
+
+    var kilometragem = prompt(nome + ", quantos kilometros até seu distino ?");
+
+    var calculeviagem = Math.round((resultado*kilometragem));
+
+
+    var valordestinos = [calculeviagem];
+
+       for(var posicao = 0; posicao <1; posicao++) {
+
+
+            if (valordestinos=  [posicao]) {
+        
+        mostra(nome + " , você vai gastar R$" + calculeviagem +  ",00, se sua viagem for só de ida, mas se sua viagem for ida e volta, seu custo será de R$" + (calculeviagem* 2)+",00, ." );
+    
+    }
+
+
+         mostra("obrigado por ultilizar nossos serviços.");
+
+     }
+
+     
+
+
+     
+
+
+        
+
+    
+
+
+
+
+    
+   
+
+    
+
+
+
+
+</script>
